@@ -443,22 +443,25 @@ article .icon {
     padding: 100px 0;
     text-align: center;
 }
-.project-content{
+.project-content {
     background-color: var(--primary-background-color);
     border: 3px solid var(--main-color);
-    padding: 30px 50px;
+    padding: 5px 10px; /* Further reduced padding */
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
     margin-bottom: 3rem;
 }
-.project-img{
+
+.project-img {
     border-radius: 2rem;
-    margin-bottom: 20px;
-    width: 70%;
-    height: 70%;
+    margin-bottom: 5px; /* Further reduced margin */
+    width: 40%; /* Further reduced width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 70%; /* Limit maximum width */
 }
+
 .project-title{
     margin: 1rem;
     text-align: center;
@@ -468,7 +471,7 @@ article .icon {
 .project-detail-conatiner {
     display: grid;
     gap: 50px 100px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     padding: 10px;
     align-items: center;
 }
@@ -706,12 +709,6 @@ article .icon {
     .timeline-dot{
         left: 0;
     }
-    .services{
-        padding-bottom: 7rem;
-    }
-    .contact form{
-        flex-direction: column;
-    }
     .footer{
         padding: 2rem 3%;
     }
@@ -829,35 +826,72 @@ article .icon {
     .contact-icon {
         height: 5rem;
     }
-    .projects {
-        padding: 50px 0;
+ 
+
+ 
+
+    .details-containers {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center align items vertically */
+        align-items: center; /* Center align items horizontally */
+        padding: 1rem; /* Adjust padding */
     }
+    
+    .experience-sub-title {
+        font-size: 2rem; /* Adjust font size */
+        gap: 0.5rem; /* Reduce space between icon and text */
+    }
+    
+    .article-container {
+        display: flex;
+        flex-direction: column; /* Stack articles vertically */
+        align-items: center; /* Center align articles */
+    }
+    
+    .about-container {
+        display: flex;
+        flex-direction: column; /* Stack columns vertically */
+        gap: 2rem; /* Adjust gap between columns */
+    }
+    
+    .experience-detail-container {
+        display: flex;
+        flex-direction: column; /* Stack details vertically */
+        align-items: center; /* Center align details */
+    }
+    
+    .article-container div h3,
+    .article-container div p {
+        font-size: 1.2rem; /* Adjust font size */
+        text-align: center; /* Center align text */
+    }
+  
 
     .project-content {
-        padding: 20px;
-        margin-bottom: 2rem;
+        padding: 20px; /* Adjust padding */
+        border-radius: 1rem; /* Adjust border radius */
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        gap: 2rem; /* Adjust space between containers */
     }
 
     .project-img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ensure image takes full width */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .project-title {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Adjust font size */
     }
 
     .project-detail-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 1rem; /* Adjust gap */
     }
 
     .btn-project {
-        padding: 0.8rem 2rem;
-        font-size: 1.4rem;
-    }
-
-    .btn-group-project {
-        gap: 1rem;
+        padding: 0.8rem 1.5rem; /* Adjust padding */
+        font-size: 1.4rem; /* Adjust font size */
     }
 }
