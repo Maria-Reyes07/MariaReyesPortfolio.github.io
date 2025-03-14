@@ -209,7 +209,7 @@ span {
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "Full-Stack Developer";
 
     }
     41%,
@@ -222,7 +222,7 @@ span {
     }
     81%,
     100%{
-        content: "A Child of God";
+        content: "Software Engineer";
     }
 }
 @keyframes typing{
